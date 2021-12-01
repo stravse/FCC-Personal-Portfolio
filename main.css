@@ -118,3 +118,17 @@ a{
     color: #f3eaf2;
     margin-left: 0.5em;
 }
+.footer{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.25rem;
+    border-top: 5px solid #d32760;
+    padding: 2em;
+    font-family: 'Inter',serif;
+}
+.footer p{
+    margin: 0;
+}
+.footer i{
+    vertical-align: middle;
+}
