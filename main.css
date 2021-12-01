@@ -1,6 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Quicksand&family=Raleway:wght@400;600&family=Roboto&display=swap');
 
-
+:root{
+    --red-color: #ca295f;
+    --grey-color: #242b3b;
+    --white-text: #f3eaf2;
+    --blue-color: #4edadf;
+    --dblue-color: #2a9aa8;
+}
 html{
     scroll-behavior: smooth;
 }
@@ -15,15 +21,15 @@ a{
 }
 .main{
     font-size: 1rem;
-    background-color: #344961;
-    color: #f0f0f0;
+    background-color: var(--grey-color);
+    color: var(--white-text);
 }
 .nav-bar{
     width: 100%;
     position: fixed;
     display: flex;
     justify-content: space-evenly;
-    background-color: #d32760;
+    background-color: var(--red-color);
     align-items: center;
 }
 
@@ -41,14 +47,15 @@ a{
     display: flex;
     padding: 1em;
     font-family: 'Roboto',sans-serif;
-    color: #f3eaf2;
+    color: var(--white-text);
     font-size: 1.25rem;
     font-weight: 600;
     letter-spacing: 2px;
     margin: 0 0.2em;
+    transition: 500ms;
 }
 .nav-link:hover{
-    background-color: #2ca3c7;
+    background-color: var(--dblue-color);
 }
 .nav-bar ul{
     list-style-type: none;
@@ -63,15 +70,15 @@ a{
     scroll-margin-top: 2.4em;
 }
 .introduction{
-    font-size: 1.5rem;
+    font-size: 2rem;
     font-family: 'Raleway', sans-serif;
 }
 .introduction h1{
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     margin: 0;
 }
 .introduction p{
-    color: #4edadf;
+    color: var(--blue-color);
 }
 .project-section{
     flex-direction: column;
@@ -80,7 +87,7 @@ a{
     color: inherit;
     background-color: #086972;
     font-family: 'Poppins',sans-serif;
-    color: #f3eaf2;
+    color: var(--white-text);
     font-size: 1.25rem;
 }
 .project-section header{
@@ -94,11 +101,11 @@ a{
     margin: 2em 0;
 }
 .project-container p{
-    color: #f3eaf2;
+    color: var(--white-text);
 }
 .card{
     display: flex;
-    background-color: #344961;
+    background-color: var(--grey-color);
     border-radius: 15px;
     overflow: hidden;
 }
@@ -106,23 +113,36 @@ a{
 .contact-section{
     flex-direction: column;
     font-family: 'Quicksand',sans-serif;
-    font-size: 1.25rem;
+    font-size: 2rem;
+    height: 80vh;
+    scroll-margin-top: 4em;
+}
+@media (max-width: 460px){
+    .contact-section{
+        font-size: 1.5rem;
+    }
 }
 .contact-section h2{
     margin: 0;
 }
 .social-section{
     display: flex;
+    margin-top: 1em;
+    gap: 1em;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
 }
 .social-section a{
-    color: #f3eaf2;
-    margin-left: 0.5em;
+    color: var(--white-text);
 }
+
 .footer{
     display: flex;
     justify-content: space-around;
     font-size: 1.25rem;
-    border-top: 5px solid #d32760;
+    border-top: 5px solid var(--red-color);
     padding: 2em;
     font-family: 'Inter',serif;
 }
@@ -131,4 +151,13 @@ a{
 }
 .footer i{
     vertical-align: middle;
+}
+@media (max-width: 420px){
+    .footer{
+        font-size: 1rem;
+    }
+    .card-image{
+        width: 90vw;
+    }
+
 }
