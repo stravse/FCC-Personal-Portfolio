@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Quicksand&family=Raleway&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins&family=Quicksand&family=Raleway:wght@400;600&family=Roboto&display=swap');
+
 
 html{
     scroll-behavior: smooth;
@@ -12,12 +13,17 @@ body{
 a{
     text-decoration: none;
 }
+.main{
+    font-size: 1rem;
+    background-color: #344961;
+    color: #f0f0f0;
+}
 .nav-bar{
     width: 100%;
     position: fixed;
     display: flex;
     justify-content: space-evenly;
-    background-color: #232324;
+    background-color: #d32760;
     align-items: center;
 }
 
@@ -40,10 +46,9 @@ a{
     font-weight: 600;
     letter-spacing: 2px;
     margin: 0 0.2em;
-    background-color: rgb(26, 130, 148);
 }
 .nav-link:hover{
-    background-color: rgb(26, 130, 148);
+    background-color: #2ca3c7;
 }
 .nav-bar ul{
     list-style-type: none;
@@ -55,22 +60,61 @@ a{
     text-align: center;
     align-items: center;
     justify-content: center;
-    color: black;
     scroll-margin-top: 2.4em;
+}
+.introduction{
+    font-size: 1.5rem;
+    font-family: 'Raleway', sans-serif;
+}
+.introduction h1{
+    letter-spacing: 2px;
+    margin: 0;
+}
+.introduction p{
+    color: #4edadf;
 }
 .project-section{
     flex-direction: column;
     text-align: center;
     height: auto;
     color: inherit;
+    background-color: #086972;
+    font-family: 'Poppins',sans-serif;
+    color: #f3eaf2;
+    font-size: 1.25rem;
+}
+.project-section header{
+    padding-top: 1.25em;
 }
 .project-container{
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
     gap: 4em;
+    margin: 2em 0;
+}
+.project-container p{
+    color: #f3eaf2;
+}
+.card{
+    display: flex;
+    background-color: #344961;
+    border-radius: 15px;
+    overflow: hidden;
 }
 
 .contact-section{
     flex-direction: column;
+    font-family: 'Quicksand',sans-serif;
+    font-size: 1.25rem;
+}
+.contact-section h2{
+    margin: 0;
+}
+.social-section{
+    display: flex;
+}
+.social-section a{
+    color: #f3eaf2;
+    margin-left: 0.5em;
 }

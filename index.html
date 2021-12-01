@@ -6,9 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="main.css" type="text/css">
+    <script src="https://kit.fontawesome.com/b5d9b34d7e.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div>
+    <div class="main">
         <nav id="navbar" class="nav-bar">
             <ul class="nav-list">
 
@@ -21,7 +22,7 @@
         </nav>
 
         <section id="welcome-section" class="content-section">
-            <div>
+            <div class="introduction">
                 <h1>Hey I am Andres</h1>
                 <p>a web developer</p>
             </div>
@@ -33,23 +34,34 @@
             </div>
 
             <div class="project-container">
-                
-                <a href="https://codepen.io/stravse/full/GRveGVp" target="_blank">
-                    <img src="https://codepen.io/stravse/pen/GRveGVp/image/small.png" alt="Landing Page Project">
-                    <p>Landing Page</p>
-                </a>
-                <a href="https://codepen.io/stravse/full/wvqQGJr" target="_blank">
-                    <img src="https://codepen.io/stravse/pen/wvqQGJr/image/small.png" alt="Survey Form Project">
-                    <p>Survey Form</p>
-                </a>
-                <a href="https://codepen.io/stravse/full/zYEOgbM" target="_blank">
-                    <img src="https://codepen.io/stravse/pen/zYEOgbM/image/small.png" alt="Technical Documentation Project">
-                    <p>Technical Documentation</p>
-                </a>
-                <a href="https://codepen.io/stravse/full/QWMxWRQ" target="_blank">
-                    <img src="https://codepen.io/stravse/pen/QWMxWRQ/image/small.png" alt="Tribute Page Project">
-                    <p>Tribute Page</p>
-                </a>
+                <div class="card">
+                    <a href="https://codepen.io/stravse/full/GRveGVp" target="_blank">
+                        <img src="https://codepen.io/stravse/pen/GRveGVp/image/small.png" alt="Landing Page Project">
+                        <p>Landing Page</p>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="https://codepen.io/stravse/full/wvqQGJr" target="_blank">
+                        <img src="https://codepen.io/stravse/pen/wvqQGJr/image/small.png" alt="Survey Form Project">
+                        <p>Survey Form</p>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="https://codepen.io/stravse/full/zYEOgbM" target="_blank">
+                        <img src="https://codepen.io/stravse/pen/zYEOgbM/image/small.png" alt="Technical Documentation Project">
+                        <p>Technical Documentation</p>
+                    </a>
+                </div>
+
+                <div class="card">
+                    <a href="https://codepen.io/stravse/full/QWMxWRQ" target="_blank">
+                        <img src="https://codepen.io/stravse/pen/QWMxWRQ/image/small.png" alt="Tribute Page Project">
+                        <p>Tribute Page</p>
+                    </a>
+                </div>
+
             </div>
             
 
@@ -58,10 +70,12 @@
         <section id="contact" class="content-section contact-section">
             <header><h2>Wanna work together?</h2></header>
             <p>How do you like your coffee?</p>
-            <a href="https://github.com/stravse" target="_blank">Github</a>
-            <a href="https://www.freecodecamp.org/stravse" target="_blank">FreeCodeCamp</a>
-            <a href="https://www.facebook.com" target="_blank">Facebook</a>
-            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            <div class="social-section">
+                <a href="https://github.com/stravse" target="_blank"><i class="fab fa-github"></i> Github</a>
+                <a href="https://www.freecodecamp.org/stravse" target="_blank"><i class="far fa-envelope"></i> Mail</a>
+                <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook-square"></i> Facebook</a>
+                <a href="https://www.instagram.com" target="_blank"><i class="fab fa-twitter"></i> Twitter</a>
+            </div>
         </section>
     </div> 
 </body>
